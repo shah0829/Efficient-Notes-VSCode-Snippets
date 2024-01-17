@@ -105,5 +105,23 @@
 			  "${1|A1,A2,B1,B2,C1,D1,E1,H1,I1,L1,M1,N1,R1,R2,A3,C2,D2|}",
 			],
 			"description": "A markdown template for Tagging a C2 and D2 groups"
+		  },
+		  "Review Article": {
+			"prefix": "reviewRt",
+			"body": [
+				"==**${1:article_id}**==",
+				"${2:article_title}",
+				"**Reviewer Recommendation:** ${3:recon}. Due date:${4:due_date}",
+				"**Review Comments to the Author:**",
+				"",
+				"${5:article_summary}",
+				"- ${6:Point1}",
+				"- ${7:Point2}",
+				"- ${8:Point3}",
+				"",
+				"**Comments to Editor:**",
+				"- ${9:Point1}"
+			],
+			"description": "A markdown template for writing reviews"
 		  }
 }
