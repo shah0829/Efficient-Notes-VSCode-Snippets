@@ -1,0 +1,109 @@
+{
+	// Place your personal workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+		"Meeting Notes": {
+		  "prefix": "mnotes",
+		  "body": [
+			"# Meeting Minutes :notebook:",
+			"",
+			"## Meeting Information",
+			"",
+			"**Meeting Date/Time:** ${1:meeting_date}, ${2:meeting_time}",
+			"**Meeting Purpose:** ${3:meeting_purpose}",
+			"**Meeting Location:** ${4|in-person,virtual,other:|}",
+			"**Note Taker:** ${5:note_taker}",
+			"",
+			"## Attendees",
+			"",
+			"People who attended:",
+			"",
+			"- ${6:Person A}",
+			"- ${7:Person B}",
+			"- ${8:Person C}",
+			"",
+			"## Agenda Items",
+			"",
+			"| Item | Description |",
+			"| ---- | ----------- |",
+			"| ${9:Agenda Item 1} | ${10:• <br>• <br>• <br>• <br>•} |",
+			"| ${11:Agenda Item 2} | ${12:• <br>• <br>• <br>• <br>•} |",
+			"",
+			"## Discussion Items",
+			"",
+			"| Item | Who | Notes |",
+			"| ---- | --- | ----- |",
+			"| ${13:item} | ${14:who} | ${15:notes} |",
+			"",
+			"## Action Items",
+			"",
+			"| Done? | Item | Responsible | Due Date |",
+			"| ----- | ---- | ----------- | -------- |",
+			"| ${16: } | ${17:item} | ${18:who} | ${19:due_date} |",
+			"",
+			"## Other Notes & Information",
+			"",
+			"${20:N/A}"
+		  ],
+		  "description": "A markdown template for meeting notes"
+		},
+		"General Notes": {
+			"prefix": "gnotes",
+			"body": [
+			  "# General Notes :notebook:",
+			  "## ${1|Topic,Title|}: ${2: }",
+			//   "## :writing_hand: On ${3:date} with ${4:meeting_person}.",
+			":writing_hand: **On** $CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR: with ${4:meeting_person}."
+			  "**By:** Shahnawaz",
+			  "- ${5:Point1}",
+			  "- ${6:Point2}",
+			  "- ${7:Point3}",
+			  "",
+			  "## Other Information or links",
+			  "- ${8:N/A}"
+			],
+			"description": "A markdown template for General notes"
+		  },
+		  "TODOs and thoughts": {
+			"prefix": "todots",
+			"body": [
+			  "## TODOs :drooling_face: and thoughts :thinking:",
+			  "### Dated : $CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR for ${3:meeting_person}.",
+			  "- ${4:Point1}",
+			  "- ${5:Point2}",
+			  "- ${6:Point3}",
+			  "",
+			  "## Other Information or links",
+			  "",
+			  "- ${7:N/A}"
+			],
+			"description": "A markdown template for TODOs and Thoughts"
+		  },
+		  "Tagged points": {
+			"prefix": "tagbpoints",
+			"body": [
+			  "==${1|TODOs,Thought,Imp,Discuss,other|}, ==",
+			],
+			"description": "A markdown template for Tagging a bullet point"
+		  },
+		  "Tagged person": {
+			"prefix": "tagperson",
+			"body": [
+			  "${1|Alex,Andrew,Boyu,Britt,Crispin,Denial,Eva,Holly,Ifedayo,Laura,Mayank,Naveed,Robin,Ryan,Ali,Cripsin Lab,Denial Lab|}",
+			],
+			"description": "A markdown template for Tagging a crispin and denial groups"
+		  }
+}
