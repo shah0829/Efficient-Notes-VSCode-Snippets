@@ -67,7 +67,7 @@
 			  "## ${1|Topic,Title|}: ${2: }",
 			//   "## :writing_hand: On ${3:date} with ${4:meeting_person}.",
 			":writing_hand: **On** $CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR: with ${4:meeting_person}."
-			  "**By:** Shahnawaz",
+			  "**By:** $note_taker",
 			  "- ${5:Point1}",
 			  "- ${6:Point2}",
 			  "- ${7:Point3}",
@@ -102,8 +102,8 @@
 		  "Tagged person": {
 			"prefix": "tagperson",
 			"body": [
-			  "${1|Alex,Andrew,Boyu,Britt,Crispin,Denial,Eva,Holly,Ifedayo,Laura,Mayank,Naveed,Robin,Ryan,Ali,Cripsin Lab,Denial Lab|}",
+			  "${1|A1,A2,B1,B2,C1,D1,E1,H1,I1,L1,M1,N1,R1,R2,A3,C2,D2|}",
 			],
-			"description": "A markdown template for Tagging a crispin and denial groups"
+			"description": "A markdown template for Tagging a C2 and D2 groups"
 		  }
 }
