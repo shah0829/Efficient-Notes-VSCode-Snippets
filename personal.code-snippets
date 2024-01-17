@@ -109,18 +109,24 @@
 		  "Review Article": {
 			"prefix": "reviewRt",
 			"body": [
+				"# Article Review",
+				"",
 				"==**${1:article_id}**==",
+				"",
 				"${2:article_title}",
 				"**Reviewer Recommendation:** ${3:recon}. Due date:${4:due_date}",
 				"**Review Comments to the Author:**",
 				"",
 				"${5:article_summary}",
+				"",
 				"- ${6:Point1}",
 				"- ${7:Point2}",
 				"- ${8:Point3}",
 				"",
 				"**Comments to Editor:**",
-				"- ${9:Point1}"
+				"",
+				"- ${9:to_editor}",
+				""
 			],
 			"description": "A markdown template for writing reviews"
 		  }
